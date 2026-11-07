@@ -78,8 +78,19 @@ Ces étapes représentent les orientations du projet et non des travaux déjà t
 
 ## Documentation
 
-Les dossiers contiendront les topologies, les configurations utiles, les commandes, les tests et les problèmes rencontrés lors des manipulations.
+Chaque laboratoire aura son propre dossier dans `labs/`, créé avec le premier lab publié. Il contiendra un compte rendu, des captures et des configurations nettoyées.
 
-Un [modèle de compte rendu](_template/README.md) est disponible pour les futurs laboratoires.
+```text
+NodX-Lab/
+├── labs/                       (créé avec le premier lab)
+│   └── lab-01-nom-du-lab/
+│       ├── README.md           compte rendu
+│       ├── captures/           captures d'écran, parfois une capture réseau nettoyée
+│       └── configs/            configurations sans secrets
+├── README.md
+└── .gitignore
+```
 
-Les fichiers publiés ne doivent contenir aucun mot de passe, clé privée, token, licence ou autre information sensible.
+Chaque compte rendu présente : l'objectif, la topologie, les commandes, les observations, les pannes provoquées et leur diagnostic, ce que j'ai appris et les questions restantes.
+
+Les fichiers publiés ne doivent contenir aucun mot de passe, clé privée, token, licence ou autre information sensible. Les captures réseau peuvent contenir des identifiants ou des adresses privées : elles sont vérifiées avant toute publication.
