@@ -15,5 +15,14 @@ __pycache__/
 *.iso
 *.lic
 
+# Fichiers créés par Windows
+desktop.ini
+Thumbs.db
+
+# Captures réseau : elles peuvent contenir des identifiants ou des adresses privées.
+# Pour en publier une volontairement : git add -f chemin/capture.pcapng
+*.pcap
+*.pcapng
+
 # Documentation locale et configurations privees
 /00-preparation/
