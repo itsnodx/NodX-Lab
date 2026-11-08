@@ -78,19 +78,25 @@ Ces étapes représentent les orientations du projet et non des travaux déjà t
 
 ## Documentation
 
-Chaque laboratoire aura son propre dossier dans `labs/`, créé avec le premier lab publié. Il contiendra un compte rendu, des captures et des configurations nettoyées.
+Les concepts, définitions et journaux de séance sont regroupés dans [learning-journey/networking](https://github.com/itsnodx/learning-journey/tree/main/networking).
+
+Les laboratoires pratiques sont publiés **seulement après leur réalisation**, avec les observations, commandes et preuves vérifiées. Un modèle de compte rendu est disponible dans [_template/README.md](_template/README.md).
 
 ```text
 NodX-Lab/
-├── labs/                       (créé avec le premier lab)
-│   └── lab-01-nom-du-lab/
-│       ├── README.md           compte rendu
-│       ├── captures/           captures d'écran, parfois une capture réseau nettoyée
-│       └── configs/            configurations sans secrets
 ├── README.md
-└── .gitignore
+├── _template/
+│   └── README.md              modèle de compte rendu
+├── .gitignore
+└── labs/                      créé lors du premier lab publié
+    └── lab-01-ping-arp-wireshark/
+        ├── README.md          compte rendu réel
+        ├── captures/          preuves vérifiées, parfois .pcap nettoyé
+        └── configs/           configurations nettoyées
 ```
 
-Chaque compte rendu présente : l'objectif, la topologie, les commandes, les observations, les pannes provoquées et leur diagnostic, ce que j'ai appris et les questions restantes.
+Le dossier `labs/` et l'exemple `lab-01-ping-arp-wireshark/` représentent **l'organisation prévue**, pas un lab déjà publié. Les dossiers `captures/` et `configs/` seront créés lorsqu'il y aura des éléments réels à y ajouter.
 
-Les fichiers publiés ne doivent contenir aucun mot de passe, clé privée, token, licence ou autre information sensible. Les captures réseau peuvent contenir des identifiants ou des adresses privées : elles sont vérifiées avant toute publication.
+Chaque compte rendu suit le parcours : objectif → préparation → topologie → manipulation → observation → panne → diagnostic → correction → bilan.
+
+Les fichiers publiés ne doivent contenir aucun mot de passe, clé privée, jeton, licence ou autre information sensible. Les captures réseau sont vérifiées avant toute publication ; les fichiers `.pcap` et `.pcapng` sont ignorés par défaut.
